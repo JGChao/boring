@@ -12,6 +12,10 @@
         padding: 0;
         list-style: none;
     }
+    .box{
+      width: 100%;
+      height: 100%;  
+    }
     .conter{
         width: 302px;
         height: auto;
@@ -36,6 +40,9 @@
     .conter li:nth-child(2n){
         color: darkgoldenrod;
     }
+    .conter li:nth-child(n){
+        color:darkgreen;
+    }
     .conter li:nth-last-child(-n + 3){
         border-bottom: 0;
     }
@@ -51,20 +58,25 @@
     }
 </style>
 <body>
-    <ul class="conter">
-        <li><span>鼠</span></li>
-        <li><span>牛</span></li>
-        <li><span>虎</span></li>
-        <li><span>兔</span></li>
-        <li><span>龙</span></li>
-        <li><span>蛇</span></li>
-        <li><span>马</span></li>
-        <li><span>羊</span></li>
-        <li><span>猴</span></li>
-        <li><span>鸡</span></li>
-        <li><span>狗</span></li>
-        <li><span>猪</span></li>
-    </ul>
+    <div class="box">
+        <video  autoplay="autoplay" muted="muted" volume="0" loop="loop" style="width: 100%; height: 100%;object-fit:cover;object-position:center center">
+            <source src="img/1.1.webm" type="video/webm">
+        </video>
+        <ul class="conter">
+            <li><span>鼠</span></li>
+            <li><span>牛</span></li>
+            <li><span>虎</span></li>
+            <li><span>兔</span></li>
+            <li><span>龙</span></li>
+            <li><span>蛇</span></li>
+            <li><span>马</span></li>
+            <li><span>羊</span></li>
+            <li><span>猴</span></li>
+            <li><span>鸡</span></li>
+            <li><span>狗</span></li>
+            <li><span>猪</span></li>
+        </ul>
+    </div>
 
 
     <script>
