@@ -85,15 +85,18 @@
 
 
     <script>
-        let Li = document.querySelectorAll('.conter li span');
-        setInterval(() => {
-            Li.forEach((v , i)=>{
-                v.style.opacity = 0;
-                setTimeout(() => {
-                    v.style.opacity = 1;
-                }, 3000);
-            })
-        }, 4000);
+        function block(svg){
+            let ele = document.querySelectorAll(svg);
+            setInterval(() => {
+                ele.forEach((v , i)=>{
+                    v.style.opacity = 0;
+                    setTimeout(() => {
+                        v.style.opacity = 1;
+                    }, 3000);
+                })
+            }, 4000);
+        }
+        block('.conter li')
 
         function Float(obj){
             this.ele = document.querySelector(obj.slect)
